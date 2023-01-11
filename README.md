@@ -17,7 +17,14 @@ The C++ REST SDK is a Microsoft project for cloud-based client-server communicat
 
 With [vcpkg](https://github.com/Microsoft/vcpkg) on Windows
 ```
-PS> vcpkg install cpprestsdk cpprestsdk:x64-windows
+
+git clone https://github.com/Microsoft/vcpkg.git
+cd vcpkg
+./bootstrap-vcpkg.sh
+./vcpkg integrate install
+
+PS> ./vcpkg install cpprestsdk cpprestsdk:x64-windows
+
 ```
 With [apt-get](https://launchpad.net/ubuntu/+source/casablanca/2.8.0-2build2) on Debian/Ubuntu
 ```
